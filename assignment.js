@@ -11,8 +11,8 @@ function kilometerToMeter(kilometer){
 }
 
 var kilometer = 89;
-var result = kilometerToMeter(kilometer);
-console.log(result);
+var result = kilometerToMeter(kilometer); // function call
+console.log(result); // output
 
 // problem-2
 function budgetCalculator(watch , phone, laptop){
@@ -27,25 +27,26 @@ function budgetCalculator(watch , phone, laptop){
         return totalCost;
     } 
 }
+
 var watch = 10;
 var phone = 11;
 var laptop = 12;
 var result = budgetCalculator(watch, phone, laptop); // function call
 console.log(result); // output
 
- //problem-3 
+//problem-3 
 function hotelCost(day){
     if(day <= 0){
         ans = "something wrong";
     }
     else if(day>= 1 && day <= 10){ //if the day value is within 1 to 10 then this condition will be executed
-        var ans = day * 100;
+        var ans = day * 100; // calculate total cost
         return ans;
     }
     else if(day >= 11 && day <= 20){ //if the day value is within 11 to 20 then this condition will be executed
         var day11To20 = day - 10;
         var day1To10 = day - day11To20;
-        var ans = day1To10 * 100 + day11To20 * 80;
+        var ans = day1To10 * 100 + day11To20 * 80; // calculate total cost
         return ans;
     }
     else{ //if the value of the day is more than 20 then this condition will be executed
@@ -54,10 +55,11 @@ function hotelCost(day){
         var day11To20 = 10;
         day -= 10;
         var otherDay = day;
-        var ans = day1To10 * 100 + day11To20 * 80 + otherDay * 50;
+        var ans = day1To10 * 100 + day11To20 * 80 + otherDay * 50; // calculate total cost
         return ans;
     }  
 }
+
 var day = 0;
  var result = hotelCost(day); // function call
  console.log(result); // output
