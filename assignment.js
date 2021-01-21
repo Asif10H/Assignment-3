@@ -38,6 +38,7 @@ console.log(result); // output
 function hotelCost(day){
     if(day <= 0){
         ans = "something wrong";
+        return ans;
     }
     else if(day>= 1 && day <= 10){ //if the day value is within 1 to 10 then this condition will be executed
         var ans = day * 100; // calculate total cost
@@ -60,7 +61,7 @@ function hotelCost(day){
     }  
 }
 
-var day = 0;
+var day = 10;
  var result = hotelCost(day); // function call
  console.log(result); // output
 
