@@ -11,7 +11,8 @@ function kilometerToMeter(kilometer){
 }
 
 var kilometer = 89;
-console.log(kilometerToMeter(kilometer));
+var result = kilometerToMeter(kilometer);
+console.log(result);
 
 // problem-2
 function budgetCalculator(watch , phone, laptop){
