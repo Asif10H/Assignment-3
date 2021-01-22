@@ -23,8 +23,8 @@ function budgetCalculator(watch , phone, laptop){
         watch = watch * 50;
         phone = phone * 100;
         laptop = laptop * 500;
-        var totalCost = watch + phone + laptop; // calculate total budget cost
-        return totalCost;
+        var totalBudgetCost = watch + phone + laptop; // calculate total budget cost
+        return totalBudgetCost;
     } 
 }
 //input
@@ -37,12 +37,12 @@ console.log(result); // output
 //problem-3 
 function hotelCost(day){
     if(day <= 0){
-        var ans = "something wrong";
-        return ans;
+        var totalCost = "something wrong";
+        return totalCost;
     }
     else if(day >= 1 && day <= 10){ //if the day value is within 1 to 10 then this condition will be executed
-        var ans = day * 100; // calculate total cost
-        return ans;
+        var totalCost = day * 100; // calculate total cost
+        return totalCost;
     }
     else if(day >= 11 && day <= 20){ //if the day value is within 11 to 20 then this condition will be executed
         var day11To20 = day - 10;
@@ -61,7 +61,7 @@ function hotelCost(day){
     }  
 }
 //input
-var day = 10;
+var day = 47;
  var result = hotelCost(day); // function call
  console.log(result); // output
 
@@ -79,6 +79,6 @@ function megaFriend(nameList){
     return  maxLenName;
 }
 //input
-var nameOfList = ["asif", "hossain", "zia", "mizan", "abdullah", "mahabub"];  
+var nameOfList = ["asif", "hossain", "zia", "habibullah", "mizan", "abdullah", "mahabub"];  
 var result = megaFriend(nameOfList) // function call
 console.log(result); // output
